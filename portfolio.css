@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(144, 238, 144);
+    color: black;
+}
+
+header, footer {
+    background-color: rgb(102, 128, 144);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #ffffff;
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+### 2. Link the Dark Mode CSS in index.html
+Ensure the dark mode stylesheet is linked in your HTML file but initially disabled:
+
+html
+<link rel="stylesheet" href="css/dark-mode.css" id="dark-mode-stylesheet" disabled>
+
+
+### 3. Add a JavaScript Function to Toggle Dark Mode
+Use JavaScript to enable or disable the dark mode stylesheet:
+
+html
+<script>
+    function toggleDarkMode() {
+        const darkModeStylesheet = document.getElementById('dark-mode-stylesheet');
+        darkModeStylesheet.disabled = !darkModeStylesheet.disabled;
+    }
+</script>
+
+
+### 4. Add a Button to Toggle Dark Mode
+Include a button in your HTML to allow users to switch between light and dark modes:
+
+html
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+```
+
+### Final Output
+When the button is clicked, the dark mode stylesheet will be applied or removed, toggling the appearance of the website.
+}
+
+
+header {
+    background: #0078d7;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section h2 {
+    color: #0078d7;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
